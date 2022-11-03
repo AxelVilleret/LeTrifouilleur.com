@@ -1,0 +1,27 @@
+<nav class="navbar1 font-effect-neon">
+  <div class="navbar1-menu">
+    <a [routerLink]="['']" class="logo1">
+      <img src="assets/Logo.png" alt="">
+    </a>
+    <form [formGroup]="searchFormGroup" (ngSubmit)="onSubmit()">
+      <input class="searchbar" type="search" name="s" placeholder="Rechercher par mot clé..." formControlName="search" />
+      <button class="button" type="submit" value="Valider">
+        <i class="fas fa-search button-icon font-effect-neon"></i>
+      </button>
+    </form>
+    <div>
+      <a [routerLink]="['/pan']" class="navbar1-link">
+        <i class="fas fa-shopping-cart navbar1-icon"></i>
+        <span class="navbar1-title">Mon panier</span>
+      </a>
+      <a [routerLink]="['/auth']" *ngIf="!estConnecte" class="navbar1-link">
+        <i class="far fa-user navbar1-icon"></i>
+        <span class="navbar1-title">Se connecter</span>
+      </a>
+      <a [routerLink]="['']" *ngIf="estConnecte" (click)="logout()" class="navbar1-link">
+        <i class="fas fa-user-alt-slash navbar1-icon"></i>
+        <span class="navbar1-title">Se déconnecter</span>
+      </a>
+    </div>
+  </div>
+</nav>

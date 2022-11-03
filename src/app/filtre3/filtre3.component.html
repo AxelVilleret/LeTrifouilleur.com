@@ -1,0 +1,12 @@
+<div class="formclass">
+    <form [formGroup]="selectFormGroup" (ngSubmit)="onSubmit()">
+        <select class="input" formControlName="select" id="category">
+            <option value="" disabled selected>Chercher par type</option>
+            <option value="fixe">fixe</option>
+            <option value="portable">portable</option>
+        </select>
+        <button class="button" type="submit" class="submit" value="Valider">
+            <i class="fas fa-search button-icon font-effect-neon"></i>
+        </button>
+    </form>
+</div>

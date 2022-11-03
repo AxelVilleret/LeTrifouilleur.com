@@ -1,0 +1,4 @@
+<app-navbar></app-navbar>
+<div *ngFor="let element of pcListe">
+    <app-pc-card *ngIf="valide(query, element)" [pc]="element"></app-pc-card>
+</div>

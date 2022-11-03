@@ -1,0 +1,11 @@
+<div class="formclass">
+    <form [formGroup]="selectFormGroup" (ngSubmit)="onSubmit()">
+        <select formControlName="select" class="input" id="category">
+            <option value="" disabled selected>Chercher par nom</option>
+            <option *ngFor="let pc of pcListe" [value]="pc.nom">{{pc.nom}}</option>
+        </select>
+        <button class="button" type="submit" class="submit" value="Valider">
+          <i class="fas fa-search button-icon font-effect-neon"></i>
+        </button>
+      </form>
+</div>

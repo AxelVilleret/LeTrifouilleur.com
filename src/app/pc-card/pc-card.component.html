@@ -1,0 +1,10 @@
+<div class="image">
+    <img [src]="imagePath" alt="Photo de PC"/>
+    <div class="texte">
+    <p>Nom: {{pc.nom}}</p>
+    <p>Prix: {{pc.prix}} $</p>
+    <p>Carte Graphique: {{pc?.system?.cg?.modele}}</p>
+    <p>Marque: {{pc.marque}}</p>
+    <p>Type: {{pc.type}}</p>
+    </div>
+</div>

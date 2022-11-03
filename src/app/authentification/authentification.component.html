@@ -1,0 +1,29 @@
+<h1 style="text-align:center">
+    Se Connecter
+  </h1>
+  <div class="login">
+    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+      <div class="help-block">
+        <div>Entrer votre Email</div>
+      </div>
+      <p>
+        <input type="email" placeholder="Email" formControlName="email">
+      </p>
+      <div class="help-block">
+        <div>Entrer votre pseudo</div>
+      </div>
+      <p>
+        <input type="input" placeholder="Pseudo" formControlName="pseudo">
+      </p>
+      <div class="help-block">
+        <div>Entrer votre mot de passe</div>
+      </div>
+      <p>
+        <input type="password" placeholder="Mot de passe" formControlName="password">
+      </p>
+
+      <p>
+        <input type="submit" value="Se connecter">
+      </p>
+    </form>
+  </div>
