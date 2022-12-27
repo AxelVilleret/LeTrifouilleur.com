@@ -13,7 +13,7 @@ export class PcService {
 
     let sub = new Subject<Pc[]>(); // on crée un observable
 
-    let urlService = `http://localhost:4200/assets/pcs.json`; // on définit l'url du json
+    let urlService = `https://letrifouilleur.netlify.app/assets/pcs.json`; // on définit l'url du json
 
     this.http.get<Pc[]>(urlService).subscribe( // on récupère les données du json
       (pc: Pc[]) => {
