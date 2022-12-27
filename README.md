@@ -2,7 +2,7 @@
 
 ## Description
 
-Mini site réalisé lors de ma formation d'ingénieur pour apprendre le framework AngularJS. Il s'agit d'un site de vente de PC sur mesure.
+Mini site réalisé lors de ma formation d'ingénieur pour apprendre le framework Angular. Il s'agit d'un site de vente de PC sur mesure.
 
 ---
 
